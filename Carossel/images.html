@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="images">
+    
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./assets/2022 mercedas E350  WHITE WITH GOLD TRIM  AND  con.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Audi a3 8v nano gray colors in the mountains on a .webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Ethiopian kids.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/gothic style (1).webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Luminous Lemurflora A fusion of lemur and lush pla.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/white guy with dark curly hair in futuristic cloth.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/gothic style (2).webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Luminous Lemurflora A fusion of lemur and lush pla.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/Photograph of a spring streetwear clothing of a bl.webp" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop:true,
+      autoplay: {
+        delay:1000,
+        disableOnInteraction:false,
+      }
+    });
+  </script>
+</body>
+</html>
