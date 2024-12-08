@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thierry Merry Christmas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+        <!-- Bienvenue -->
+        <div class="salutation">
+            <h1 class="animate__animated animate__zoomInDown animate__slow">Tongasoa et Bienvenue <br> Herzlich  Willkommen !</h1>
+        </div>
+    
+        <!-- Envelope -->
+        <div class="loader">
+        </div>
+    
+        <!-- User input -->
+        <div id="user-input">
+            <input id="user-name" type="text" placeholder="Dein Name">
+            <button id="send-btn">
+                <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <span>Senden</span>
+            </button>
+        </div>
+        
+        <!------  Loading cubes-->
+        
+        <div class="cube-loader-container">
+                    <div class="cube-loader">
+                        <div class="cube-top">
+                        <svg
+                            style="width: inherit;
+                            height: inherit;"
+                        >
+                            <rect
+                            x="0"
+                            y="0"
+                            width="100%"
+                            height="100%"
+                            filter="url(#waterCaustic)"
+                            ></rect>
+                        </svg>
+                        </div>
+                        <div class="cube-wrapper">
+                        <span style="--i:0" class="cube-span"> </span>
+                        <span style="--i:1" class="cube-span"></span>
+                        <span style="--i:2" class="cube-span"></span>
+                        <span style="--i:3" class="cube-span"></span>
+                        </div>
+                    </div>
+                    
+                    <svg style="display: none;">
+                        <defs>
+                        <filter id="waterCaustic">
+                            <feTurbulence
+                            type="fractalNoise"
+                            baseFrequency="0.09"
+                            numOctaves="1"
+                            result="turbulence"
+                            ></feTurbulence>
+                            <feDisplacementMap
+                            in="SourceGraphic"
+                            in2="turbulence"
+                            scale="600"
+                            xChannelSelector="R"
+                            yChannelSelector="G"
+                            ></feDisplacementMap>
+                        </filter>
+                        </defs>
+                    </svg>
+        </div>
+        
+            
+  
+</div>
+        
+
+    
+       
+
+      
+
+         
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
