@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Italianno&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mountains+of+Christmas:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&display=swap');
 
-
 body {
     background-color: /*#2e3138;#73ba9b*/  #d90429;
     margin: 0;
@@ -292,8 +291,21 @@ rect {
   padding: 20px;
   border-radius: 10px;
   
+  
 }
 
+
+.container-page2 .Text-malagasy{
+  color:white;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 50px;
+  font-size: 35px;
+  font-family: 'Poppins', cursive;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 
@@ -851,15 +863,24 @@ rect {
    box-shadow: 0 0 5px #f5de93, 0 0 15px #f5de93, 0 0 20px #f5de93, 0 0 40px #f5de93, 0 0 60px #decea4, 0 0 10px #d6c0a5, 0 0 98px #ff0000;
     }
   }
-
-
+  /*------######################## Texte en Allemand ############################################*/
+  .text-allemand-container{
+    margin-top: 200px;
+    margin-left: 350px;
+    margin-right: 100px;
+    color: white;
+    font-family: 'Pacifico', cursive; /* Utilisez une police festive */
+    font-size: 1.5em;
+    text-align: center;
+  }
   /*+++++++++++++++++++++++++++++++++++++++++ Carte de voeux */
   .christmas-card {
     width:220px;
     height: 300px;
     position: absolute;
-    margin-top: 650px;
-    margin-left: 650px;
+    margin-top: 200px;
+    margin-left: 70%;
+    margin-bottom: 50px;
     cursor: pointer;
     transform-style: preserve-3d;
     transform: perspective(2000px);
@@ -1000,8 +1021,8 @@ line-height:150%;
 
 .chocolate-box {
     position: absolute;
-    margin-top: 1200px;
-    margin-left: 600px;
+    margin-top: 150px;
+    margin-left: 450px;
     height: 300px;
     width: 300px;
     cursor: pointer;
