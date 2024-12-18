@@ -66,6 +66,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// ********************* Arbre de Noel **************************
+// click on the tree to see the animation again. 
+
+$(document).ready(function(){
+    $('#christmas-tree').mouseleave(function(){
+      $(this).removeClass('clicked');
+    }).click(function(){
+      $(this).addClass('clicked').html($(this).html());
+    });
+  });
 
    
 
@@ -88,8 +98,6 @@ input.addEventListener("click", function(){
     input.innerHTML = "Play";
   }
 });
-
-
 // ******************     chocolat box
 
 // hover on chocolate box to see the flavours.
@@ -129,6 +137,5 @@ $(document).ready(function(){
         $("#truffle2").hide();
     });
 });
-
 
 // +++++++++++++++++++++    ++++++++++++ la neige

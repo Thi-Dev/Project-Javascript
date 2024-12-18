@@ -8,6 +8,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="page2">
@@ -15,46 +16,30 @@
     
 
 <div class="container-page2">
-    <h1 class="text animate__animated animate__bounce animate__infinite" id="greeting-message">Joyeux Noël <span id="user-name">....</span>!</h1>
-    <p class="Text-malagasy">Tratry ny Krismasy daholo, ry namana malala!</br>
+    <h1 class="text animate__animated animate__bounce animate__infinite" id="greeting-message">Merry Christmas <span id="user-name">....</span>!</h1>
+    <p class="Text-malagasy">Tratry ny Krismasy, ry namana malala!</br>
       Enga anie ity fotoana feno hafaliana ity hitondra hehy, fitiavana ary fotoana tsy hay hadino.
       Aoka ny fotoana rehetra miaraka amin’ny fianakaviana sy ny namana hitondra hafaliana sy fiadanana ho anareo, ary enga anie ho tanteraka daholo ny nofinofinareo amin’ity taona ity.
-      Tratry ny Krismasy! 🎄✨
+      Tratry ny Krismasy! 💖✨
     </p>
 
 
         <!-- Arbre de noel -->
-   
-        <div class="christmas">
+        <div class="christmas-container">
+          <div id="christmas-tree" class="christmas-tree">
             <div class="tree">
-              <div class="chain"></div>
-              <div class="chain2"></div>
+              <div class="tree-details"></div>
             </div>
             <div class="lights">
-              <div class="light1"></div>
-              <div class="light2"></div>
-              <div class="light3"></div>
-              <div class="light4"></div>
-              <div class="light5"></div>
-              <div class="light6"></div>
-              <div class="light7"></div>
-              <div class="light8"></div>
-              <div class="light9"></div>
-              <div class="light10"></div>
+              <div class="row-one"></div>
+              <div class="row-two"></div>
             </div>
-            <div class="balls">
-              <div class="ball1"></div>  
-            </div>
+            <div class="balls"></div>
             <div class="star"></div>
-            <div class="gift"></div>
-            <div class="ribbon"></div>
-            <div class="gift2"></div>
-            <div class="ribbon2"></div>
-            <div class="gift3"></div>
-            <div class="ribbon3"></div>
             <div class="shadow"></div>
-            
           </div>
+        </div>
+        
         <!------######################## Texte en Allemand ############################################-->
 
         <div class="text-allemand-container">
@@ -66,24 +51,34 @@
           </span>
         </div>
 
-        <!--++++++++++++++++++++++++++++++ Carte de voeux -->
-        <div class="christmas-card">
+        
+
+    <!--- La carte de voeux -->
+
+  <div class="card-container">
+    <div class="christmas-card">
             <audio id="player" name="jingle-bells">
             <source src="https://lenadesign.org/wp-content/uploads/2022/12/Jingle-Bells-Instrumental-Jingle-Punks.mp3" type="audio/mpeg"/></audio>
-       
-                <input id="open" type="checkbox">
-                <label class="open" for="open"></label>
-                <div class="card-front">
-                    <div class="santa-claus"></div>
-                    <div class="front"></div>
-                    <div class="pompon"></div>
-                </div>
-                <div class="card-inside"></div>
-                
-        </div>
-    
-    <!----- chocolat box -->
+      
+            <input id="open" type="checkbox">
+            <label class="open" for="open"></label>
+            <div class="card-front">
+              <div class="santa-claus"></div>
+              <div class="front"></div>
+              <div class="pompon"></div>
+            </div>
+          <div class="card-inside"></div>
+    </div>
+  </div>
 
+  <!-- Un text de voeux -->
+   <div class="text-chocolat">
+    <h1 class="animate__animated animate__backInRight animate__repeat-3	3 ">Parce qu’un cadeau, qu’il soit réel ou virtuel, est avant tout un geste du cœur. Alors, savourez-le avec le sourire ☺️</h1>   
+   </div>
+
+  <!-- Chocolat Box-->
+  
+  <div class="chocolat-container">
     <div class="chocolate-box">
         <div class="chocs">
           <div id="top-left" class="top-left"></div>
@@ -97,9 +92,8 @@
         <div id="milk">Milk Chocolate</div>
         <div id="truffle">Chocolate truffle</div>
         <div id="truffle2">Chocolate truffle</div>
-      </div>
-
-    <!--- La neige -->
+    </div>
+  </div>
  
                 
                 

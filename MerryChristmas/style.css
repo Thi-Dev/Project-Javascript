@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Italianno&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mountains+of+Christmas:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&display=swap');
 
-body {
+body.page1 {
     background-color: /*#2e3138;#73ba9b*/  #d90429;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,7 +20,6 @@ body {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
-    font-weight: 400px;
     font-size:50px;
     color: #f8f9fa;
     margin-bottom: 10px;
@@ -279,15 +278,80 @@ rect {
 
  /* #####################   ##############    ############# CSS PAGE 2  */
 
- .container-page2 .text {
-  display: flex;
-  margin-left: 500px;
+ .page2{
+  
+  background-color: #0BCE83;
+ }
+
+
+  .container-page2 {
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+ 
+ .text {
+  display: inline-block;
+  margin-left: 300px;
+  align-items: center;
   justify-content: center;
   font-size: 80px;
   font-family: "Dancing Script", cursive;
   display: inline-block;  /* Utiliser inline-block pour appliquer une bordure au texte directement */
   color: white;
+  
+  padding: 20px;
+  border-radius: 10px;
+  
+  
+}
+
+
+.container-page2 .Text-malagasy{
+  color:white;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 50px;
+  font-size: 35px;
+  font-family: 'Poppins', cursive;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by ilkhoeri */ 
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+ .page2{
+  background-color: #0BCE83;
+ }
+ .container-page2 .text {
+  display: flex;
+  margin-left: 300px;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-family: "Dancing Script", cursive;
+  display: inline-block;  /* Utiliser inline-block pour appliquer une bordure au texte directement */
+  color: white;
+  
   padding: 20px;
   border-radius: 10px;
   
@@ -380,510 +444,267 @@ rect {
 
 
 /*++++++++++++++++++++++++++++++++++++++++Arbre de Noel */
+.christmas-container{
+  display: flex;
+  margin-top: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.christmas-tree {
+  position: relative;
+  top:100px;
+  cursor: pointer;
+}
 
-  
-  .christmas {
-    position: absolute;
-    margin: 250px 0 200px 165px;
+.tree {
+  position: absolute;
+  width: 20px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-bottom: 55px solid #823723;
+  height:0;
+  animation: drop 1s linear;
+}
 
-  }
-  .Joyeux-noel{
-    position: relative;
-    margin-left: 400px;
-    color: white;
-  }
-  
-  .tree {
-    position: relative;
-    background-color: #685044;
-    width: 30px;
-    height:80px;
-    top:100px;
-    transform-style: preserve-3d;
-  }
-  
-  .tree:before {
-    content:"";
-    position: relative;
-    width: 0;
-    height: 0;
-    border-left: 90px solid transparent;
-    border-right: 90px solid transparent;
-    border-bottom: 270px solid #127475;
-    border-radius: 30px;
-    top:-250px;
-    left:-75px;
-  }
-  
-  .tree:after {
-    content:"";
-    position: relative;
-    width: 0;
-    height: 0;
-    border-right: 90px solid transparent;
-    border-bottom: 270px solid #0e9594;
-    border-bottom-right-radius: 30px;
-    top:-250px;
-    left:-165px;
-  }
-  
-  .chain {
-    width: 85px;
-    height: 85px;
-    border: solid 3px #333;
-    border-radius: 50%;
-    top: -185px; 
-    left: -35px; 
-    position: absolute;
-    transform: rotate3d(8, 0.1, -5, 75deg); 
-    box-sizing: border-box;
-    backface-visibility: visible !important;
-    z-index:5;
-  }
-  
-  .chain2 {
-    width: 145px;
-    height: 135px;
-    border: solid 3px #333;
-    border-radius: 50%;
-    top: -115px; 
-    left: -65px; 
-    position: absolute;
-    transform: rotate3d(8, 0.1, -5, 75deg); 
-    box-sizing: border-box;
-    backface-visibility: visible !important;
-    z-index:5;
-    
-  }
-  
-  .shadow {
-    background-color: rgba(0,0,0,0.07);
-    position: absolute;
-    width: 250px;
-    height: 30px;
-    border-radius:50%;
-    top:170px;
-    left:-115px;
-    z-index:-1;
-  }
-  
-  .star {
-    margin: 50px 0;
-    position: absolute;
-    display: block;
-    width: 0px;
-    height: 0px;
-    border-right: 25px solid transparent;
-    border-bottom: 17.5px solid #f9dc5c;
-    border-left: 25px solid transparent;
-    transform: rotate(35deg);
-    top:-190px;
-    left:-9px;
-      }
-  
-  .star:before {
-        border-bottom: 20px solid #f9dc5c;
-        border-left: 7.5px solid transparent;
-        border-right: 7.5px solid transparent;
-        position: absolute;
-        height: 0;
-        width: 0;
-        top: -12.5px;
-        left: -17.5px;
-        display: block;
-        content: '';
-        transform: rotate(-35deg);
-      }
-  
-  .star:after {
-        position: absolute;
-        display: block;
-        top: 0.75px;
-        left: -26.25px;
-        width: 0px;
-        height: 0px;
-        border-right: 25px solid transparent;
-        border-bottom: 17.5px solid #f9dc5c;
-        border-left: 25px solid transparent;
-        transform: rotate(-70deg);
-        content: '';
-      }
-  
-  .lights {
-    position: absolute;
-    
-  }
-  
-  .light1 {
-     position: absolute;
-     width: 15px; 
-     height: 15px;
-     border-radius: 10px 150px 30px 150px;
-  }
-  
-  .light1 {
-    background-color: #ff595e;
-    top:-100px;
-    left:-35px;
-    transform: rotate(40deg);
-    box-shadow: 1px 1px 15px #faf3dd;
-  }
-  
-  .light2 {
-    position: absolute;
-    background-color: #ffca3a;
-    top:-95px;
-    left:-10px;
-    box-shadow: 1px 1px 15px #faf3dd;
-    width: 15px; 
-    height: 15px;
-    border-radius: 10px 150px 30px 150px;
-    transform: rotate(40deg);
-  }
-  
-  .light3 {
-    position: absolute;
-    background-color: #6a4c93;
-    top:-105px;
-    left:15px;
-    box-shadow: 1px 1px 15px #faf3dd;
-    width: 15px; 
-    height: 15px;
-    border-radius: 10px 150px 30px 150px;
-    transform: rotate(40deg);
-  }
-  
-  .light4 {
-    position: absolute;
-    background-color: #1982c4;
-    top:-118px;
-    left:35px;
-    box-shadow: 1px 1px 15px #faf3dd;
-    width: 15px; 
-    height: 15px;
-    border-radius: 10px 150px 30px 150px;
-    transform: rotate(40deg);
-  }
-  
-  .light5 {
-    position: absolute;
-    background-color: #1982c4;
-    top:12px;
-    left:-55px;
-    box-shadow: 1px 1px 15px #faf3dd;
-    width: 15px; 
-    height: 15px;
-    border-radius: 10px 150px 30px 150px;
-    transform: rotate(40deg);
-  }
-  
-  .light6 {
-    position: absolute;
-    background-color: #8ac926;
-    top:15px;
-    left:-25px;
-    box-shadow: 1px 1px 15px #faf3dd;
-    width: 15px; 
-    height: 15px;
-    border-radius: 10px 150px 30px 150px;
-    transform: rotate(40deg);
-  }
-  
-  .light7 {
-    position: absolute;
-    background-color: #ff595e;
-    top:10px;
-    left:2px;
-    box-shadow: 1px 1px 15px #faf3dd;
-    width: 15px; 
-    height: 15px;
-    border-radius: 10px 150px 30px 150px;
-    transform: rotate(40deg);
-  }
-  
-  .light8 {
-    position: absolute;
-    background-color: #ffca3a;
-    top:-2px;
-    left:27px;
-    box-shadow: 1px 1px 15px #faf3dd;
-    width: 15px; 
-    height: 15px;
-    border-radius: 10px 150px 30px 150px;
-    transform: rotate(40deg);
-  }
-  
-  .light9 {
-    position: absolute;
-    background-color: #9e0059;
-    top:-17px;
-    left:50px;
-    box-shadow: 1px 1px 15px #faf3dd;
-    width: 15px; 
-    height: 15px;
-    border-radius: 10px 150px 30px 150px;
-    transform: rotate(40deg);
-  }
-  
-  .light10 {
-    position: absolute;
-    background-color: #4361ee;
-    top:-40px;
-    left:68px;
-    box-shadow: 1px 1px 15px #faf3dd;
-    width: 15px; 
-    height: 15px;
-    border-radius: 10px 150px 30px 150px;
-    transform: rotate(40deg);
-  }
-  
-  .gift {
-    position: absolute;
-    width: 60px;
-    height: 50px;
-    background-color: #ffc857;
-    top:130px;
-    left:30px;
-    box-shadow: inset -8px 0 0 rgba(0,0,0,0.07);
-    
-  }
-  
-  .gift:before {
-    content:"";
-    position: absolute;
-    width:70px;
-    height:15px;
-    background-color: #ffc857;
-    left:-5px;
-    box-shadow: inset -8px -4px 0 rgba(0,0,0,0.07);
-    
-  }
-  
-  .gift:after {
-    content:"";
-    background-color: #db3a34;
-    width: 10px;
-    height:50px;
-    position: absolute;
-    left:25px;
-  }
-  
-  .ribbon {
-    position: absolute;
-    width: 20px;
-    height: 10px;
-    border: 3px solid #db3a34;
-    border-radius:50%;
-    transform: skew(15deg, 15deg);
-    top:116px;
-    left:35px;
-  }
-  
-  .ribbon:before {
-    content:"";
-    position: absolute;
-    width: 20px;
-    height: 10px;
-    border: 3px solid #db3a34;
-    border-radius:50%;
-    transform: skew(-15deg, -20deg);
-    left:22px;
-    top:-8px;
-  }
-  
-  .gift2 {
-    position: absolute;
-    width: 50px;
-    height: 40px;
-    background-color: #08bdbd;
-    top:140px;
-    left:-65px;
-    box-shadow: inset -8px 0 0 rgba(0,0,0,0.07);
-    
-  }
-  
-  .gift2:before {
-    content:"";
-    position: absolute;
-    width:60px;
-    height:15px;
-    background-color: #08bdbd;
-    left:-5px;
-    box-shadow: inset -8px -4px 0 rgba(0,0,0,0.07);
-    
-  }
-  
-  .gift2:after {
-    content:"";
-    background-color: #abff4f;
-    width: 10px;
-    height:40px;
-    position: absolute;
-    left:15px;
-  }
-  
-  .gift3 {
-    position: absolute;
-    width: 40px;
-    height: 30px;
-    background-color: #7678ed;
-    top:150px;
-    left:-85px;
-    box-shadow: inset -8px 0 0 rgba(0,0,0,0.07);
-    
-  }
-  
-  .gift3:before {
-    content:"";
-    position: absolute;
-    width:50px;
-    height:10px;
-    background-color: #7678ed;
-    left:-5px;
-    box-shadow: inset -8px -4px 0 rgba(0,0,0,0.07);
-    
-  }
-  
-  .gift3:after {
-    content:"";
-    background-color: #f7b801;
-    width: 7px;
-    height:30px;
-    position: absolute;
-    left:15px;
-  }
-  
-  .ribbon2 {
-    position: absolute;
-    width: 15px;
-    height: 7px;
-    border: 3px solid #abff4f;
-    border-radius:50%;
-    transform: skew(15deg, 15deg);
-    top:129px;
-    left:-65px;
-  }
-  
-  .ribbon2:before {
-    content:"";
-    position: absolute;
-    width: 15px;
-    height: 7px;
-    border: 3px solid #abff4f;
-    border-radius:50%;
-    transform: skew(-15deg, -20deg);
-    left:15px;
-    top:-8px;
-  }
-  
-  .ribbon3 {
-    position: absolute;
-    width: 12px;
-    height: 5px;
-    border: 3px solid #f7b801;
-    border-radius:50%;
-    transform: skew(15deg, 15deg);
-    top:142px;
-    left:-85px;
-  }
-  
-  .ribbon3:before {
-    content:"";
-    position: absolute;
-    width: 12px;
-    height: 5px;
-    border: 3px solid #f7b801;
-    border-radius:50%;
-    transform: skew(-15deg, -20deg);
-    left:15px;
-    top:-8px;
-  }
-  
-  .balls {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #db3a34;
-    top:15px;
-    left: -15px;
-  }
-  
-  .balls:before {
-    content:"";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #ffc857;
-    top:35px;
-    left: -15px;
-  }
-  
-  .balls:after {
-    content:"";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #f07167;
-    top:20px;
-    left: 45px;
-  }
-  
-  .ball1 {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #fae588;
-    top:-90px;
-    left:20px;
-    
-  }
-  
-  .ball1:before {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #fae588;
-    content:"";
-    top:170px;
-    left:50px
-  }
-  
-  .light1, .light2, .light3, .light4, .light5, .light6, .light7, .light8, .light9, .light10 {
-    -webkit-animation: flash 6s infinite;
-  }
-  
-  @-webkit-keyframes flash {
-    20%, 24%, 55% {box-shadow: none;}
-   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-   box-shadow: 0 0 5px #f5de93, 0 0 15px #f5de93, 0 0 20px #f5de93, 0 0 40px #f5de93, 0 0 60px #decea4, 0 0 10px #d6c0a5, 0 0 98px #ff0000;
+.tree:before {
+  content:"";
+  position: absolute;
+  background-color: #823723;
+  border-radius: 50%;
+  width: 30px;
+  height:10px;
+  top:50px;
+  left:-5px;
+}
+
+.tree:after {
+  content:"";
+  position: absolute;
+  border-right: 75px solid transparent;
+  border-left: 75px solid transparent;
+  border-bottom: 200px solid #107261;
+  width:0;
+  height:0;
+  top:-180px;
+  left:-65px;
+}
+
+.tree-details {
+  position: absolute;
+  width: 150px;
+  height: 10px;
+  background-color: #107261;
+  border-radius: 50%;
+  top:15px;
+  left:-65px;
+  z-index:1;
+}
+
+.tree-details:before {
+  content:"";
+  position: absolute;
+  background-color: #0a897c;
+  border-radius:50%;
+  width: 5px;
+  height: 5px;
+  top:-10px;
+  left:20px;
+  box-shadow: 50px -50px #0a897c, 30px -70px #0a897c, 40px -130px #0a897c, 70px -5px #0a897c, 85px -75px #0a897c;
+}
+
+.lights {
+  position: absolute;
+  opacity:0;
+  animation: light 2s linear infinite, drop 1s linear .5s forwards;
+}
+
+@keyframes light {
+  0% {filter: drop-shadow(0 0 2px #fefae0) brightness(1);}
+  50% {filter: drop-shadow(0 0 5px #fefae0) brightness(1.35);}
+  100% {filter: drop-shadow(0 0 2px #fefae0) brightness(1);}
+}
+
+.row-one {
+  position: absolute;
+  background-color: #e9d8a6;
+  border-radius:50%;
+  width:10px;
+  height:10px;
+  top: -120px;
+  left: -15px;
+  box-shadow: 10px 10px #e9d8a6, 25px 15px #e9d8a6, 40px 18px #e9d8a6, 54px 15px #e9d8a6;
+}
+
+.row-two {
+  position: absolute;
+  background-color: #e9d8a6;
+  border-radius:50%;
+  width:10px;
+  height:10px;
+  left:-42px;
+  top:-45px;
+  box-shadow: 10px 10px #e9d8a6, 25px 17px #e9d8a6, 40px 24px #e9d8a6, 55px 28px #e9d8a6, 70px 30px #e9d8a6, 85px 29px #e9d8a6, 100px 25px #e9d8a6, 112px 20px #e9d8a6;
+}
+
+.balls {
+  position: absolute;
+  background-color: #f34653;
+  width:15px;
+  height: 15px;
+  border-radius:50%;
+  z-index:2;
+  opacity:0;
+  box-shadow: -20px -55px #f34653, 25px -70px #f34653;
+  animation: drop 1s linear 1s forwards;
+}
+
+.balls:before {
+  content:"";
+  position: absolute;
+  background-color: #f34653;
+  width:13px;
+  height: 13px;
+  border-radius:50%;
+  left:-40px;
+  top:-10px;
+  box-shadow: 100px 10px #f34653, 25px -80px #f34653, 60px -120px #f34653;
+}
+
+.balls:after {
+  content:"";
+  position: absolute;
+  background-color: #94d2bd;
+  width:10px;
+  height: 10px;
+  border-radius:50%;
+  top:-40px;
+  left:40px;
+  box-shadow: -35px -35px #94d2bd, -35px -105px #94d2bd, -60px 45px #94d2bd;
+}
+
+.star {
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-bottom: 17.5px solid #f9c819;
+  border-left: 25px solid transparent;
+  transform: rotate(-35deg);
+  top:-190px;
+  left:-9px;
+  opacity:0;
+  animation: dropStar 1s linear 1.5s forwards;
     }
-  }
+
+.star:before {
+      border-bottom: 20px solid #f9c819;
+      border-left: 7.5px solid transparent;
+      border-right: 7.5px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -12.5px;
+      left: -17.5px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+
+.star:after {
+      position: absolute;
+      display: block;
+      top: 0.75px;
+      left: -26.25px;
+      width: 0px;
+      height: 0px;
+      border-right: 25px solid transparent;
+      border-bottom: 17.5px solid #f9c819;
+      border-left: 25px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+   
+    @keyframes drop {
+  0% {transform: translateY(-470px) scaleY(0.9); opacity: 0;}
+  5% {opacity: 1;}
+  50% {transform: translateY(0px) scaleY(1); opacity: 1;}
+  65% {transform: translateY(-15px) scaleY(0.9); opacity: 1;}
+  75% {transform: translateY(-18px) scaleY(0.9); opacity: 1;}
+  100% {transform: translateY(0px) scaleY(1); opacity: 1;}
+}
+
+   @keyframes dropStar {
+  0% {transform: translateY(-470px) scaleY(0.9) rotate(-35deg); opacity: 0;}
+  5% {opacity: 1;}
+  50% {transform: translateY(0px) scaleY(1) rotate(-35deg); opacity: 1;}
+  65% {transform: translateY(-15px) scaleY(0.9) rotate(-35deg); opacity: 1;}
+  75% {transform: translateY(-18px) scaleY(0.9) rotate(-35deg); opacity: 1;}
+  100% {transform: translateY(0px) scaleY(1) rotate(-35deg); opacity: 1;}
+  100% {transform: translateY(0px) scaleY(1) rotate(-35deg); opacity: 1;}
+}
+
+.shadow {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.7);
+  width: 50px;
+  height: 20px;
+  z-index:-1;
+  top:50px;
+  left:-10px;
+  animation: scale .5s linear forwards;
+}
+
+@keyframes scale {
+  0% {transform: scaleX(1);}
+  100% {transform: scaleX(3);}
+}
+
+
+
+
   /*------######################## Texte en Allemand ############################################*/
-  .text-allemand-container{
+  .text-allemand-container {
     margin-top: 200px;
-    margin-left: 350px;
-    margin-right: 100px;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-family: 'Pacifico', cursive; /* Utilisez une police festive */
     font-size: 1.5em;
     text-align: center;
-  }
+}
+
+/* Pour les écrans de taille inférieure à 768px (mobile) */
+@media (max-width: 768px) {
+    .text-allemand-container {
+        margin-top: 250px; /* Réduire la marge supérieure pour les petits écrans */
+        font-size: 1.3em;  /* Réduire la taille de la police */
+    }
+}
+
+/* Pour les écrans de taille inférieure à 480px (très petit mobile) */
+@media (max-width: 480px) {
+    .text-allemand-container {
+        margin-top: 250px; /* Encore plus petite marge */
+        font-size: 1.2em;    /* Taille de police encore réduite */
+    }
+}
   /*+++++++++++++++++++++++++++++++++++++++++ Carte de voeux */
+  .card-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
   .christmas-card {
     width:220px;
     height: 300px;
-    position: absolute;
-    margin-top: 200px;
-    margin-left: 70%;
-    margin-bottom: 50px;
+    position: relative;
     cursor: pointer;
     transform-style: preserve-3d;
-    transform: perspective(2000px);
+  transform: perspective(2000px);
     transition: .3s;
 }
         input#open {
@@ -1006,7 +827,8 @@ z-index:-1;
 }
 
 .card-inside:before {
-content:"Joyeux Noël à tous, chers amis ! Que cette période festive soit remplie de rires, d’amour et de moments inoubliables. Que chaque instant passé en famille et entre amis vous apporte bonheur et sérénité, et que tous vos rêves se réalisent cette année. Joyeux Noël !";
+content:"Merry Christmas my dear friends, may you feel the love this special day! May this festive season brings lots of joy and happiness in your life. May all of your wishes and dreams come true, and may you feel this happiness all year round. Merry Christmas!";
+display: flex;
 position: absolute;
 font-size: 15px;
 text-align: center;
@@ -1016,284 +838,362 @@ line-height:150%;
 }
 
 
-  
-/******************************************  chocolat box */
 
+
+
+/************************* mediaQueries ***************************/
+
+/****** media pag1 *************/
+/* Responsive Styles for small screens */
+@media (max-width: 768px) {
+  .salutation > h1 {
+      font-size: 35px; /* Réduit la taille de la police sur les petits écrans */
+  }
+
+  .container {
+      padding: 10px; /* Réduit les espaces internes */
+  }
+
+  #user-name {
+      width: 100%; /* S'assure que le champ prend toute la largeur sur les petits écrans */
+  }
+
+  button {
+      width: 100%; /* Le bouton prend toute la largeur sur les petits écrans */
+  }
+}
+
+@media (max-width: 480px) {
+  .salutation > h1 {
+      font-size: 25px; /* Encore plus petit sur les très petits écrans */
+  }
+
+  .loader {
+      width: 120px; /* Réduit la taille du loader */
+      height: 80px;
+  }
+
+  button {
+      font-size: 16px; /* Réduit la taille du texte du bouton */
+  }
+}
+
+/******** Mediaquerie Page 2 **********/
+
+/******* Joyeux NOel jusqu a tratry Krismasy ******** /
+
+/* Ajout de la responsivité pour les petits écrans */
+@media screen and (max-width: 768px) {
+  .container-page2 .text {
+    font-size: 50px; /* Réduire la taille du texte pour les petits écrans */
+    margin-left: 0; /* Enlever la marge à gauche pour les petits écrans */
+    margin-right: 0;
+    padding: 10px;
+  }
+
+  .container-
+  
+  .Text-malagasy {
+    font-size: 1em; /* Ajuster la taille du texte */
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 300;
+  }
+}
+/******************** text- de voeux*************************/
+
+.text-chocolat h1{
+  margin: 50px;
+  color:#f8f9fa;
+  font-size: 1.8em;
+  font-family: "Dancing Script", cursive;
+}
+
+/***************** chocolate-box***************************/
+
+.chocolat-container{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0BCE83;
+  overflow: hidden;
+  z-index: 2;
+  height: 100vh;
+  margin-top: 20px;
+ 
+  
+}
 .chocolate-box {
-    position: absolute;
-    margin-top: 150px;
-    margin-left: 450px;
-    height: 300px;
-    width: 300px;
-    cursor: pointer;
-  }
-  
-  .chocolate-box:before, .chocolate-box:after {
-    content:"";
-    position: absolute;
-  }
-  
-  .chocolate-box:before {
-    width: 160px;
-    height: 160px;
-    background-color: #4b301b;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    box-shadow: 10px 10px #392312;
-  }
-  
-  .chocolate-box:after {
-    width: 68px;
-    height: 68px;
-    background-color: #2b0900;
-    top:81px;
-    left: 80px;
-    box-shadow: 70px 0 #2b0900, 70px 70px #2b0900, 0px 70px #2b0900;
-  }
-  
-  .chocs {
-    position: absolute;
-    z-index:1;
-  }
-  
-  .top-left {
-    top:92px;
-    left:90px;
-  }
-  
-  .top-left:hover {
-    transform: rotate(25deg);
-  }
-  
-  .top-left:active {
-    opacity:0;
-  }
-  
-  .bottom-right {
-    left:162px;
-    top: 162px;
-  }
-  
-  .bottom-right:hover {
-    transform: rotate(25deg);
-  }
-  
-  .bottom-right:active {
-    opacity:0;
-  }
-  
-  .top-left, .bottom-right {
-    position: absolute;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background-color: #d12511;
-    box-shadow: 20px 0 #d12511;
-    filter: drop-shadow(2px 2px #ab1503) drop-shadow(-2px 2px #ab1503);
-    transition: .2s;
-  }
-  
-  .top-left:after, .top-left:before, .bottom-right:before, .bottom-right:after {
-    content:"";
-    position: absolute;
-  }
-  
-  .top-left:before, .bottom-right:before {
-    width: 30px;
-    height: 30px;
-    background-color: #d12511;
-    transform: rotate(-45deg);
-    top:10px;
-    left:10px;
-  }
-  
-  .top-left:after, .bottom-right:after {
-    border-radius: 50%;
-    background-color: rgba(255,255,255,.3);
-    width:10px;
-    height: 10px;
-    top:5px;
-    left:35px;
-  }
-  
-  .top-right {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #fee8c0;
-    width:45px;
-    height: 45px;
-    top:92px;
-    left: 162px;
-    filter: drop-shadow(2px 2px #ceb587) drop-shadow(-2px 2px #ceb587);
-    overflow: hidden;
-    transition: .2s;
-  }
-  
-  .top-right:before, .top-right:after {
-    content:"";
-    position: absolute;
-    background-color: #93522b;
-    width:100px;
-    height: 3px;
-    left:-5px;
-  }
-  
-  .top-right:before {
-    top:15px;
-    transform: rotate(-35deg);
-    box-shadow: 0 -15px #93522b;
-  }
-  
-  .top-right:after {
-    top:0;
-    transform: rotate(-15deg);
-    box-shadow: 0 17px #93522b, 0 30px #93522b;
-  }
-  
-  .bottom-left:hover {
-    transform: rotate(25deg);
-  }
-  
-  .bottom-left:active {
-    opacity:0;
-  }
-  
-  .top-right:hover {
-    transform: rotate(25deg);
-  }
-  
-  .top-right:active {
-    opacity:0;
-  }
-  
-  .bottom-left {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #503520;
-    width:45px;
-    height: 45px;
-    top:162px;
-    left: 92px;
-    filter: drop-shadow(2px 2px #342010) drop-shadow(-2px 2px #342010);
-    overflow: hidden;
-    transition: .2s;
-  }
-  
-  .bottom-left:before, .bottom-left:after {
-    content:"";
-    position: absolute;
-    background-color: #fde7c7;
-    width:100px;
-    height: 3px;
-    left:-5px;
-  }
-  
-  .bottom-left:before {
-    top:15px;
-    transform: rotate(-35deg);
-    box-shadow: 0 -15px #fde7c7;
-  }
-  
-  .bottom-left:after {
-    top:0;
-    transform: rotate(-15deg);
-    box-shadow: 0 17px #fde7c7, 0 30px #fde7c7;
-  }
-  
-  .box-bottom {
-    position: absolute;
-    background-color: #392312;
-    width: 15px;
-    height: 15px;
-    transform: rotate(45deg);
-    left:222px;
-    top:73px;
-    z-index:-1;
-    box-shadow: 0px 211px #392312;
-  }
-  
-  .cover {
-    position: absolute;
-    background-color: #cf2611;
-    width:150px;
-    height: 150px;
-    border: 5px solid #ae1605;
-    z-index:2;
-    top:70px;
-    left:70px;
-    transform-origin: top;
-    transition: .2s;
-    overflow: hidden;
-  }
-  
-  .chocolate-box:hover .cover {
-    transform: rotateX(170deg);
-    box-shadow: 5px -5px 20px rgba(0,0,0,.5);
-  }
-  
-  .chocolate-box:hover .cover:before {
-    display: none;
-  }
-  
-  .cover:before {
-    position: absolute;
-    content:"Hover Me";
-    color: #ffead2;
-    font-family: "Brush Script MT", cursive;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 35px;
-    transform: translate(-50%,-50%);
-    left:50%;
-    top:50%;
-    text-align: center;
-    border: 2px double;
-  }
-  
-  .cover:after {
-    position: absolute;
-    content:"";
-    background-color: #ffead2;
-    height:10px;
-    width: 100px;
-    transform: rotate(-45deg);
-    left:-20px;
-    box-shadow: -5px 165px #ffead2;
-  }
-  
-  #white, #milk, #truffle, #truffle2 {
-    position: absolute;
-    width: 100%;
-    display: none;
-    color: #ffead2;
-    font-family: "Brush Script MT", cursive;
-    font-size: 25px;
-    transition: .1;
-  }
-  
-  #white {
-    top:100px;
-    left: 250px;
-  }
-  
-  #milk {
-    top:170px;
-    left:-70px;
-  }
-  
-  #truffle {
-    left: 250px;
-    top: 170px;
-  }
-  
-  #truffle2 {
-    left: -70px;
-    top: 100px;
-  }
+  position: relative;
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+}
 
-  
-  /*------ La neige */
+.chocolate-box:before, .chocolate-box:after {
+  content:"";
+  position: absolute;
+}
+
+.chocolate-box:before {
+  width: 160px;
+  height: 160px;
+  background-color: #4b301b;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 10px 10px #392312;
+}
+
+.chocolate-box:after {
+  width: 68px;
+  height: 68px;
+  background-color: #2b0900;
+  top:81px;
+  left: 80px;
+  box-shadow: 70px 0 #2b0900, 70px 70px #2b0900, 0px 70px #2b0900;
+}
+
+.chocs {
+  position: absolute;
+  z-index:1;
+}
+
+.top-left {
+  top:92px;
+  left:90px;
+}
+
+.top-left:hover {
+  transform: rotate(25deg);
+}
+
+.top-left:active {
+  opacity:0;
+}
+
+.bottom-right {
+  left:162px;
+  top: 162px;
+}
+
+.bottom-right:hover {
+  transform: rotate(25deg);
+}
+
+.bottom-right:active {
+  opacity:0;
+}
+
+.top-left, .bottom-right {
+  position: absolute;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #d12511;
+  box-shadow: 20px 0 #d12511;
+  filter: drop-shadow(2px 2px #ab1503) drop-shadow(-2px 2px #ab1503);
+  transition: .2s;
+}
+
+.top-left:after, .top-left:before, .bottom-right:before, .bottom-right:after {
+  content:"";
+  position: absolute;
+}
+
+.top-left:before, .bottom-right:before {
+  width: 30px;
+  height: 30px;
+  background-color: #d12511;
+  transform: rotate(-45deg);
+  top:10px;
+  left:10px;
+}
+
+.top-left:after, .bottom-right:after {
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.3);
+  width:10px;
+  height: 10px;
+  top:5px;
+  left:35px;
+}
+
+.top-right {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fee8c0;
+  width:45px;
+  height: 45px;
+  top:92px;
+  left: 162px;
+  filter: drop-shadow(2px 2px #ceb587) drop-shadow(-2px 2px #ceb587);
+  overflow: hidden;
+  transition: .2s;
+}
+
+.top-right:before, .top-right:after {
+  content:"";
+  position: absolute;
+  background-color: #93522b;
+  width:100px;
+  height: 3px;
+  left:-5px;
+}
+
+.top-right:before {
+  top:15px;
+  transform: rotate(-35deg);
+  box-shadow: 0 -15px #93522b;
+}
+
+.top-right:after {
+  top:0;
+  transform: rotate(-15deg);
+  box-shadow: 0 17px #93522b, 0 30px #93522b;
+}
+
+.bottom-left:hover {
+  transform: rotate(25deg);
+}
+
+.bottom-left:active {
+  opacity:0;
+}
+
+.top-right:hover {
+  transform: rotate(25deg);
+}
+
+.top-right:active {
+  opacity:0;
+}
+
+.bottom-left {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #503520;
+  width:45px;
+  height: 45px;
+  top:162px;
+  left: 92px;
+  filter: drop-shadow(2px 2px #342010) drop-shadow(-2px 2px #342010);
+  overflow: hidden;
+  transition: .2s;
+}
+
+.bottom-left:before, .bottom-left:after {
+  content:"";
+  position: absolute;
+  background-color: #fde7c7;
+  width:100px;
+  height: 3px;
+  left:-5px;
+}
+
+.bottom-left:before {
+  top:15px;
+  transform: rotate(-35deg);
+  box-shadow: 0 -15px #fde7c7;
+}
+
+.bottom-left:after {
+  top:0;
+  transform: rotate(-15deg);
+  box-shadow: 0 17px #fde7c7, 0 30px #fde7c7;
+}
+
+.box-bottom {
+  position: absolute;
+  background-color: #392312;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  left:222px;
+  top:73px;
+  z-index:-1;
+  box-shadow: 0px 211px #392312;
+}
+
+.cover {
+  position: absolute;
+  background-color: #cf2611;
+  width:150px;
+  height: 150px;
+  border: 5px solid #ae1605;
+  z-index:2;
+  top:70px;
+  left:70px;
+  transform-origin: top;
+  transition: .2s;
+  overflow: hidden;
+}
+
+.chocolate-box:hover .cover {
+  transform: rotateX(170deg);
+  box-shadow: 5px -5px 20px rgba(0,0,0,.5);
+}
+
+.chocolate-box:hover .cover:before {
+  display: none;
+}
+
+.cover:before {
+  position: absolute;
+  content:"Hover Me";
+  color: #ffead2;
+  font-family: "Brush Script MT", cursive;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 35px;
+  transform: translate(-50%,-50%);
+  left:50%;
+  top:50%;
+  text-align: center;
+  border: 2px double;
+}
+
+.cover:after {
+  position: absolute;
+  content:"";
+  background-color: #ffead2;
+  height:10px;
+  width: 100px;
+  transform: rotate(-45deg);
+  left:-20px;
+  box-shadow: -5px 165px #ffead2;
+}
+
+#white, #milk, #truffle, #truffle2 {
+  position: absolute;
+  width: 100%;
+  display: none;
+  color: #ffead2;
+  font-family: "Brush Script MT", cursive;
+  font-size: 25px;
+  transition: .1;
+}
+
+#white {
+  top:100px;
+  left: 250px;
+}
+
+#milk {
+  top:170px;
+  left:-70px;
+}
+
+#truffle {
+  left: 250px;
+  top: 170px;
+}
+
+#truffle2 {
+  left: -70px;
+  top: 100px;
+}
 
