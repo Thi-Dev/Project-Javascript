@@ -1,7 +1,5 @@
 
 // ++++++++++++++++++++++++++++ click button et settimeout 
-// Récupérer les éléments du DOM
-// Récupérer les éléments du DOM
 // Fonction pour gérer la logique de la page 1
 function handlePage1() {
     const sendBtn = document.getElementById('send-btn');
@@ -42,6 +40,7 @@ function handlePage1() {
 // Fonction pour gérer la logique de la page 2
 function handlePage2() {
     const greetingMessage = document.getElementById('greeting-message');
+    const audio = document.getElementById('jingle-bells'); // L'élément audio
 
     // Récupérer le nom de l'utilisateur depuis le localStorage
     const userName = localStorage.getItem('userName');
@@ -50,9 +49,13 @@ function handlePage2() {
     if (userName) {
         greetingMessage.textContent = `Joyeux Noël, ${userName} !`;
     } else {
-        // Si aucun nom n'est trouvé, afficher un message par défaut
         greetingMessage.textContent = "Joyeux Noël !";
     }
+
+    // Lancer la chanson après le chargement de la page 2
+    audio.play().catch((error) => {
+        console.log("Lecture automatique bloquée par le navigateur :", error);
+    });
 }
 
 // Détection automatique de la page
@@ -65,6 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
         handlePage2();
     }
 });
+
+//**************** MUSIQUE JUNGLE BELL */
+
+
 
 // ********************* Arbre de Noel **************************
 // click on the tree to see the animation again. 
@@ -85,19 +92,19 @@ $(document).ready(function(){
 // music source: (free music) youtube audio library - Jingle Bells (by Jingle Punks).
 // tested in the Firefox browser.
 
-let input = document.getElementById("open");
-let audio = document.getElementById("player");
+// let input = document.getElementById("open");
+// let audio = document.getElementById("player");
 
-input.addEventListener("click", function(){
-  if(audio.paused){
-    audio.play();
-    audio.currentTime = 0;
-    input.innerHTML = "Pause";
-  } else {
-    audio.pause();
-    input.innerHTML = "Play";
-  }
-});
+// input.addEventListener("click", function(){
+//   if(audio.paused){
+//     audio.play();
+//     audio.currentTime = 0;
+//     input.innerHTML = "Pause";
+//   } else {
+//     audio.pause();
+//     input.innerHTML = "Play";
+//   }
+// });
 
 
 
