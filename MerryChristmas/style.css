@@ -2,29 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Italianno&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mountains+of+Christmas:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&display=swap');
 
 body.page1 {
-  background: linear-gradient(to right, 
-  #4C0519, 
-  #8C1226, 
-  #D90429, 
-  #F45B69, 
-  #FFC5C1);
-    margin: 0;
-    font-family: Arial, sans-serif;
-    animation: gradientAnimation 8s ease infinite;
+  background: linear-gradient(
+    to right, 
+    #3e017d, /* Violet sombre */
+    #8502fe, /* Violet intense */
+    #a511db, /* Violet clair */
+    #d8119f, /* Rose éclatant */
+    #8c0c4a, /* Rouge sombre */
+    #ff2164 /* Rouge vif */
+  );
+  background-size: 300% 300%; /* Étend le fond pour que l'animation ait plus de place pour se déplacer */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+/* Animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  /* Animation */
-  @keyframes gradientAnimation {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
+  50% {
+    background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 
 .container {
@@ -1264,7 +1268,8 @@ line-height:150%;
 
 
 /********* MY PICTURES *******/
-.mypictures.container{
+.mypictures-container{
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1272,7 +1277,14 @@ line-height:150%;
 }
 
 .mypictures{
+  
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  
+}
+#moi{
+  font-family: "Great Vibes", cursive;
+  color: white;
+  font-size: 50px;
 }
