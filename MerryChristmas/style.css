@@ -3,18 +3,21 @@
 
 body.page1 {
   background: linear-gradient(
-    to right, 
+    130deg, 
     #3e017d, /* Violet sombre */
+    #6f198f, /* Violet intermédiaire */
     #8502fe, /* Violet intense */
+    #9a40db, /* Violet plus doux */
     #a511db, /* Violet clair */
     #d8119f, /* Rose éclatant */
+    #b24c8b, /* Teinte plus douce de rose */
     #8c0c4a, /* Rouge sombre */
     #ff2164 /* Rouge vif */
   );
-  background-size: 300% 300%; /* Étend le fond pour que l'animation ait plus de place pour se déplacer */
+  background-size: 400% 400%; /* Agrandit l'espace pour plus de fluidité dans l'animation */
   margin: 0;
   font-family: Arial, sans-serif;
-  animation: gradientAnimation 10s ease infinite;
+  animation: gradientAnimation 15s ease infinite; /* Ralentir l'animation pour plus de fluidité */
 }
 
 /* Animation */
@@ -29,7 +32,6 @@ body.page1 {
     background-position: 0% 50%;
   }
 }
-
 
 .container {
     display: flex;
