@@ -40,7 +40,7 @@ body.page1 {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
-    font-size:50px;
+    font-size:70px;
     color: #f8f9fa;
     margin-bottom: 10px;
     text-align: center;
@@ -735,7 +735,7 @@ rect {
     align-items: center;
     color: white;
     font-family: 'Pacifico', cursive; /* Utilisez une police festive */
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: center;
 }
 
@@ -743,7 +743,7 @@ rect {
 @media (max-width: 768px) {
     .text-allemand-container {
         margin-top: 250px; /* Réduire la marge supérieure pour les petits écrans */
-        font-size: 1.3em;  /* Réduire la taille de la police */
+        font-size: 1.5em;  /* Réduire la taille de la police */
     }
 }
 
@@ -751,7 +751,7 @@ rect {
 @media (max-width: 480px) {
     .text-allemand-container {
         margin-top: 250px; /* Encore plus petite marge */
-        font-size: 1.2em;    /* Taille de police encore réduite */
+        font-size: 1.5em;    /* Taille de police encore réduite */
     }
 }
   /*+++++++++++++++++++++++++++++++++++++++++ Carte de voeux */
@@ -889,7 +889,7 @@ z-index:-1;
 }
 
 .card-inside:before {
-content:"Merry Christmas my dear friends, may you feel the love this special day! May this festive season brings lots of joy and happiness in your life. May all of your wishes and dreams come true, and may you feel this happiness all year round. Merry Christmas! Thierry Bogard Rts";
+content:"Merry Christmas my dear friends, may you feel the love this special day! May this festive season brings lots of joy and happiness in your life. May all of your wishes and dreams come true, and may you feel this happiness all year round. Merry Christmas! Thierry Andria";
 display: flex;
 position: absolute;
 font-size: 15px;
