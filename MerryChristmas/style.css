@@ -2,10 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Italianno&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mountains+of+Christmas:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&display=swap');
 
 body.page1 {
-    background-color: /*#2e3138;#73ba9b*/  #d90429;
+  background: linear-gradient(to right, 
+  #4C0519, 
+  #8C1226, 
+  #D90429, 
+  #F45B69, 
+  #FFC5C1);
     margin: 0;
     font-family: Arial, sans-serif;
-}
+    animation: gradientAnimation 8s ease infinite;
+  }
+  
+  /* Animation */
+  @keyframes gradientAnimation {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
 
 .container {
     display: flex;
@@ -280,8 +300,32 @@ rect {
 
  .page2{
   
-  background-color: #0BCE83;
+  background: linear-gradient(to right, 
+                #213A57, 
+                #0B6477, 
+                #14919B, 
+                #0AD1C8, 
+                #45DFB1, 
+                #80ED99);
+  animation: gradientShift 10s ease-in-out infinite;
  }
+ @keyframes gradientShift {
+  0% {
+      background-position: 0% 50%;
+  }
+  25% {
+      background-position: 50% 0%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  75% {
+      background-position: 50% 100%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
 
 
   .container-page2 {
@@ -351,7 +395,6 @@ rect {
   font-family: "Dancing Script", cursive;
   display: inline-block;  /* Utiliser inline-block pour appliquer une bordure au texte directement */
   color: white;
-  
   padding: 20px;
   border-radius: 10px;
   
@@ -359,18 +402,37 @@ rect {
 }
 
 
-.container-page2 .Text-malagasy{
-  color:white;
+.container-page2 .Text-malagasy {
+  color: white;
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 50px;
-  font-size: 35px;
-  font-family: 'Poppins', cursive;
   font-size: 1.3em;
+  font-family: 'Poppins', cursive;
   font-weight: 400;
   font-style: normal;
 }
 
+/* Pour les tablettes */
+@media screen and (max-width: 768px) {
+  .container-page2 .Text-malagasy {
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 1.1em;
+    margin-top: 40px;
+  }
+}
+
+/* Pour les mobiles */
+@media screen and (max-width: 480px) {
+  .container-page2 .Text-malagasy {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 1em;
+    margin-top: 30px;
+    text-align: center; /* Centrer le texte pour petits écrans */
+  }
+}
 
 
 
@@ -827,7 +889,7 @@ z-index:-1;
 }
 
 .card-inside:before {
-content:"Merry Christmas my dear friends, may you feel the love this special day! May this festive season brings lots of joy and happiness in your life. May all of your wishes and dreams come true, and may you feel this happiness all year round. Merry Christmas!";
+content:"Merry Christmas my dear friends, may you feel the love this special day! May this festive season brings lots of joy and happiness in your life. May all of your wishes and dreams come true, and may you feel this happiness all year round. Merry Christmas! Thierry Bogard Rts";
 display: flex;
 position: absolute;
 font-size: 15px;
@@ -891,7 +953,7 @@ line-height:150%;
     padding: 10px;
   }
 
-  .container-
+
   
   .Text-malagasy {
     font-size: 1em; /* Ajuster la taille du texte */
@@ -916,7 +978,6 @@ line-height:150%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0BCE83;
   overflow: hidden;
   z-index: 2;
   height: 100vh;

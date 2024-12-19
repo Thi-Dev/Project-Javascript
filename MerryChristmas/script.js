@@ -98,6 +98,12 @@ input.addEventListener("click", function(){
     input.innerHTML = "Play";
   }
 });
+
+
+
+
+
+
 // ******************     chocolat box
 
 // hover on chocolate box to see the flavours.
